@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_notes"
+        android:title="Add Notes"
+        android:icon="@drawable/ic_add"
+        android:fontFamily="@font/josefinsans_regular"
+        />
+    <item
+        android:id="@+id/saved_notes"
+        android:title="Saved Notes"
+        android:icon="@drawable/homework"
+        android:fontFamily="@font/josefinsans_regular"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"
+        android:fontFamily="@font/josefinsans_regular"
+        />
+
+</menu>

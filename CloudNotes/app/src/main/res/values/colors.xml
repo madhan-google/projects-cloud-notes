@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_purple</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="row_item_bg">#BDBCBC</color>
+    <color name="login_activity_bg">#A454AA</color>
+    <color name="text_color">@android:color/black</color>
+</resources>

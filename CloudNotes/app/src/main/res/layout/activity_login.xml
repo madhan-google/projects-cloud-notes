@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif"
+            android:src="@drawable/login_as_user"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/user_mailid"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/login_logo"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="mail id"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/user_mailid"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/josefinsans_regular"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click the text box to see your password"
+            android:layout_below="@id/user_password"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/inner_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/josefinsans_regular"
+                android:text="login"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/josefinsans_regular"
+                android:text="cancel"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inner_linear_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/josefinsans_regular"
+            android:text="I don't have an account? Register"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/password_reset_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_view"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/josefinsans_regular"
+            android:gravity="right"
+            android:text="Forgot Password"
+            android:textColor="@android:color/holo_orange_light" />
+    </RelativeLayout>
+</ScrollView>
